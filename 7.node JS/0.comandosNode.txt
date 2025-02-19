@@ -1,0 +1,33 @@
+Lodash é uma biblioteca que traz utilitários para manipular objetos e 
+arrays de forma mais fácil
+
+* no terminal *
+
+    verificar a versão do NODE: 
+node -v 
+
+    verificar a versão do NPM (Node Pack Manager):
+npm -v
+
+    instalar pacotes pelo NPM (i = "instalar"):
+npm i lodash
+--------------------------------------
+// nodemon é uma modulo do NODE que faz a busca do código atualizado sempre 
+que é executado, sendo possivel alterar o código (Ex: "4.usandoModulosTerceiros")
+    
+    instalando uma dependencia global:
+npm i -g nodemon
+--------------------------------------
+    usado para criar um arquivo package.json em um projeto. Esse arquivo é essencial para gerenciar as dependências, scripts, metadados e outras configurações do projeto.
+npm init
+ou 
+npm init -y // irá aceitar todas as perguntas
+
+---------------------------------------
+    instala uma dependencia no "package.json", no caso a "axios"
+npm i --save axios
+
+----------------------------------------
+site com scripts do npm:
+
+https://docs.npmjs.com/cli/v11/using-npm/scripts 

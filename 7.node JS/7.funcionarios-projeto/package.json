@@ -1,0 +1,15 @@
+{
+  "name": "7.funcionarios-projeto",
+  "version": "1.0.0",
+  "description": "projeto de funcionarios curso udemy",
+  "main": "1.funcionarios",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christian Mattos",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9"
+  }
+}
