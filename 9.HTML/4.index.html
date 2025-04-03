@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios HTML</title>
+    <style>
+        #conteudo{
+            padding: 30px 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercicios HTML</h1>
+    </header>
+    <nav>
+        <a href="exercicios/4.teste.html">00 - teste</a> |
+        <a href="exercicios/5.texto1.html">Texto 1</a> |
+        <a href="exercicios/6.texto2.html">Texto 2</a> |
+    </nav>
+    <section id="conteudo"></section>
+    <footer>
+        Curso de web moderno
+    </footer>
+    <!--Vamos interceptar o click do link utilizando "document.querySelectorAll('a')"
+    para selecionar todos as tags "a", para que a proxima página vire o HTML "index.html", com o "conteudo.innerHTML" = linha 32 -->
+    <!--Fetch é uma API nativa do JavaScript que permite fazer requisições HTTP assíncronas
+        baseada em Promise-->
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+
+            link.onclick = function (e){
+                e.preventDefault()
+                fetch(link.href)
+                    .then(res => res.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        });
+    </script>
+</body>
+</html>
