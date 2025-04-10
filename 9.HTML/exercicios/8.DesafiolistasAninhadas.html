@@ -1,0 +1,84 @@
+<h1>Projetos</h1>
+<style>
+    #guias {
+  display: none;
+}
+</style>
+
+<ul class="tree">
+    <li>
+        <button onclick=mostrarPastaGeral()> Backend</button>
+        <ul id="pasta-geral">
+            <li>
+                <button onclick=mostrarPastaApp()>app</button>
+                <ul id="pasta-app">
+                    <li>produto.js</li>
+                    <li>usuario.js</li>
+                    <li>venda.js</li>
+                </ul>
+            </li>
+            <li>
+                <button onclick=mostrarPastaConfig()>config</button>
+                <ul id="pasta-config">
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                    <li>servidor.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <button onclick=mostrarPastaFrontend()>frontend</button>
+        <ul id="pasta-frontend">
+            <li>
+                <button onclick=mostrarPastaPublic()>public</button>
+                <ul id="pasta-public">
+                    <li>app.css</li>
+                    <li>app.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<script>
+   function mostrarPastaGeral(){
+    if(document.getElementById('pasta-geral').style.visibility == "hidden"){
+        document.getElementById('pasta-geral').style.visibility = "visible"
+    }else{
+        document.getElementById('pasta-geral','pasta-app','pasta-config').style.visibility = "hidden"
+    }
+   }
+
+   function mostrarPastaApp(){
+    if(document.getElementById('pasta-app').style.visibility == "hidden"){
+        document.getElementById('pasta-app').style.visibility = "visible"
+    }else{
+        document.getElementById('pasta-app').style.visibility = "hidden"
+    }
+   }
+
+   function mostrarPastaConfig(){
+    if(document.getElementById('pasta-config').style.visibility == "hidden"){
+        document.getElementById('pasta-config').style.visibility = "visible"
+    }else{
+        document.getElementById('pasta-config').style.visibility = "hidden"
+    }
+   }
+
+   function mostrarPastaFrontend(){
+    if(document.getElementById('pasta-frontend').style.visibility == "hidden"){
+        document.getElementById('pasta-frontend').style.visibility = "visible"
+    }else{
+        document.getElementById('pasta-frontend').style.visibility = "hidden"
+    }
+   }
+   function mostrarPastapublic(){
+    if(document.getElementById('pasta-public').style.visibility == "hidden"){
+        document.getElementById('pasta-public').style.visibility = "visible"
+    }else{
+        document.getElementById('pasta-public').style.visibility = "hidden"
+    }
+   }
+</script>

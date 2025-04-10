@@ -1,0 +1,58 @@
+<h1>Projetos</h1>
+<style>
+    span:hover{
+        cursor: pointer
+    }
+</style>
+
+<ul class="tree">
+    <li>
+        <Span wm-folder>Backend </Span>
+        <ul>
+            <li>
+                <span wm-folder>app</span>
+                <ul>
+                    <li>produto.js</li>
+                    <li>usuario.js</li>
+                    <li>venda.js</li>
+                </ul>
+            </li>
+            <li>
+                <span wm-folder>config</span>
+                <ul>
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                    <li>servidor.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span wm-folder>frontend</span>
+        <ul>
+            <li>
+                <span wm-folder>public</span>
+                <ul>
+                    <li>app.css</li>
+                    <li>app.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<!--Usar 'debugger' para debugar o código-->
+<!-- selecionar uma marcação peronsalizada ".querySelectorAll('[wm-folder]')" -> -->
+<!-- pegar o proximo elemento após o outro -> ".nextElementSibling"-->
+<script>
+   document.querySelectorAll('[wm-folder]').forEach(folder =>{
+    folder.onclick= function(e){
+        const ul = folder.nextElementSibling
+        const displayAtual =  ul.style.display
+        ul.style.display = displayAtual === 'none' ? 'block' : 'none' // operação ternaria 
+        // pesquisar sobre OPERAÇÂO TERNARIA
+    }})
+    
+
+</script>
