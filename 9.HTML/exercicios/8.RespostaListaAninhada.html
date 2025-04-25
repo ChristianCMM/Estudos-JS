@@ -50,9 +50,17 @@
     folder.onclick= function(e){
         const ul = folder.nextElementSibling
         const displayAtual =  ul.style.display
-        ul.style.display = displayAtual === 'none' ? 'block' : 'none' // operação ternaria 
+        
+        // displayAtual === 'none' ? 'block' : 'none' // operação ternaria 
+        // ul.style.display = displayAtual
         // pesquisar sobre OPERAÇÂO TERNARIA
-    }})
-    
 
-</script>
+        if(displayAtual === 'none'){
+            ul.style.display = 'block'
+        }else{
+            ul.style.display = 'none'
+        }
+       
+        
+    }})
+W</script>
